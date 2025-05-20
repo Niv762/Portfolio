@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivas | Junior Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container" id="mainContainer">
+        <div class="left-panel">
+            <div class="name">Nivas</div>
+            <div class="role">Junior Developer</div>
+            <a class="email" href="mailto:niv762@gmail.com">niv762@gmail.com</a>
+            <div class="experience" style="margin-top:24px;">
+                <div style="font-weight:bold;">Experience</div>
+                <div>Seventhsense Technologies Pvt Ltd, Chennai</div>
+                <div style="font-size:0.95rem;color:#7ecfff;">Feb 15, 2024 – Present</div>
+            </div>
+            <button class="show-btn" onclick="showDetails()" style="margin-top:auto;">Show More</button>
+        </div>
+        <div class="right-panel">
+            <img class="profile-photo" src="profile.jpg" alt="Nivas Photo">
+        </div>
+        <div class="details-panel">
+            <button class="back-btn" onclick="hideDetails()">Back</button>
+            <div class="details-title">Client:</div>
+            <div>Aspinwall</div>
+            <div class="details-title" style="margin-top:12px;">Working Projects:</div>
+            <ul>
+                <li>Developed multiple screens (Masters, Transaction, Reports) using own platform for Aspinwall.</li>
+                <li>Installed and configured SOC applications: <b>Wazuh</b>, <b>Fleet</b>, <b>GitLab</b>, <b>SonarQube</b>, <b>Docker Registry</b>, <b>Reposilite</b>.</li>
+                <li>Worked on integration and maintenance of security and DevOps tools for client environments.</li>
+            </ul>
+            <div class="details-title" style="margin-top:12px;">Skills:</div>
+            <div>HTML, CSS, JavaScript, MySQL, Basic Java, Spring Boot, Linux, Docker, GitLab CI/CD, SonarQube, Wazuh, Fleet, Reposilite</div>
+            <div class="details-title" style="margin-top:12px;">Experience:</div>
+            <div>
+                Junior Developer at Seventhsense Technologies Pvt Ltd, Chennai<br>
+                <span style="color:#7ecfff;">Feb 15, 2024 – Present</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showDetails() {
+            document.getElementById('mainContainer').classList.add('show-details');
+        }
+        function hideDetails() {
+            document.getElementById('mainContainer').classList.remove('show-details');
+        }
+    </script>
+</body>
+</html>
